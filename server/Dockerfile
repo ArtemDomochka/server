@@ -9,7 +9,7 @@ ADD ${pwd}/src /src
 
 RUN ./build.sh
 
-EXPOSE 80
+EXPOSE 100
 
 ENTRYPOINT ./server 0.0.0.0 80 .
 
