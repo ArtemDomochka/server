@@ -1,17 +1,20 @@
 FROM amd64/ubuntu:trusty
 
-RUN apt-get update\
-    && apt-get install -y gcc-multilib g++-multilib libboost-all-dev
+CMD echo "success"
 
-WORKDIR /src
 
-ADD ${pwd}/src /src
+#RUN apt-get update\
+#    && apt-get install -y gcc-multilib g++-multilib libboost-all-dev
 
-RUN ./build.sh
+#WORKDIR /src
 
-EXPOSE 80
+#ADD ${pwd}/src /src
 
-ENTRYPOINT ./server 0.0.0.0 80 .
+#RUN ./build.sh
+
+#EXPOSE 80
+
+#ENTRYPOINT ./server 0.0.0.0 80 .
 
 
 
