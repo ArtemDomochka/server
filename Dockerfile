@@ -1,6 +1,6 @@
 FROM amd64/ubuntu:trusty
 
-CMD echo "success"
+CMD echo "success!"
 
 
 #RUN apt-get update\
